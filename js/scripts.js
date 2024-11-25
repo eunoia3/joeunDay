@@ -142,6 +142,9 @@ window.addEventListener('DOMContentLoaded', event => {
     // 갤러리 init
     initGallery();
 
+    // 갤러리 아이템 모달 이전, 다음 버튼 init
+    initModalBtn();
+
     // 마음 전하실 곳 init
     initSendAccount();
 

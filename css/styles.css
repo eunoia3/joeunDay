@@ -11524,6 +11524,7 @@ p span {
     position: absolute;
     top: 0;
     right: 0;
+    padding: 1rem;
     /*width: 1.5rem;
     height: 1.5rem;
     margin: 1rem;*/
