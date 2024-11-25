@@ -236,6 +236,8 @@ function showGalleryItem(seq) {
     const modal = document.querySelector('.modal');
     modal.style.display = 'block';
     document.body.style.overflow = 'hidden';
+
+    initModalBtn();
 }
 
 
