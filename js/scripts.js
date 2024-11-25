@@ -337,6 +337,8 @@ function showToastMsg(text){
 
 /** 카카오톡 공유하기 **/
 function shareKakao() {
+
+/*    
     Kakao.Share.sendDefault({
           objectType: 'feed',
           content: {
@@ -364,5 +366,13 @@ function shareKakao() {
               },
             },
           ],
+        });
+*/
+    Kakao.Share.sendCustom({
+        templateId: '114610',
+          templateArgs: {
+            title: '제목 영역입니다.',
+            description: '설명 영역입니다.',
+          },
         });
 }
