@@ -11545,10 +11545,13 @@ p span {
 position: relative;
   float: left;
   height: 2.5rem;
+  vertical-align: middle;
 }
 .next{
-position: relative;
+  position: relative;
   float: right;
+  height: 2.5rem;
+  vertical-align: middle;
 
 }
 .prev-icon {
