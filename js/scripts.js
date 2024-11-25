@@ -371,8 +371,8 @@ function shareKakao() {
     Kakao.Share.sendCustom({
         templateId: 114610,
           templateArgs: {
-            title: '제목 영역입니다.',
-            description: '설명 영역입니다.',
+            title: 'jo🩷eun day!',
+            description: '2025.04.12 (토) 오후 12:20\n더 리버사이드 호텔 노벨라홀',
           },
         });
 }

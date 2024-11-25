@@ -11040,7 +11040,7 @@ footer.footer .social-link:hover {
   padding-top: 8rem;
   padding-bottom: 8rem;
   background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../assets/photo/M12_17_GHO_2118-1.jpg");
-  /*background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../assets/img/bg-masthead.jpg");*/
+  /*background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../assets/photo/M15_GHO_2543.jpg");*/
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -11224,7 +11224,9 @@ footer.footer .social-link:hover {
   position: relative;
   display: flex;
   align-items: center;
+  border-radius: 0.7rem 0.7rem 0.7rem 0.7rem;
 }
+
 .gallery-thumbnail::after {
   display: block;
   content: "";
@@ -11279,6 +11281,14 @@ footer.footer .social-link:hover {
   color: black;
   line-height: 1rem;
   font-weight: bolder;
+}
+
+.font-notosans-8 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 0.8rem;
+  color: black;
+  line-height: 1rem;
+  /*font-weight: bolder;*/
 }
 
 .font-notosans-9 {
@@ -11368,6 +11378,10 @@ footer.footer .social-link:hover {
   margin-top: 2rem;
   margin-bottom: 0;
 }*/
+
+p span {
+  font-weight: bold;
+}
 
 .thank-u-div {
     width: 100%;
@@ -11481,7 +11495,7 @@ footer.footer .social-link:hover {
 /*팝업*/
     position: absolute;
     /*height: 65%;*/
-    width: 85%;
+    width: 100%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -11510,14 +11524,15 @@ footer.footer .social-link:hover {
     position: absolute;
     top: 0;
     right: 0;
-    width: 2rem;
-    height: 2rem;
-    margin: 1rem;
+    /*width: 1.5rem;
+    height: 1.5rem;
+    margin: 1rem;*/
 }
 .close-icon {
-    width: 100%;
-    height: 100%;
+    width: 2rem;
+    height: 2rem;
     color: white;
+    padding: 0.5re
 }
 
 .images{
@@ -11538,12 +11553,16 @@ position: relative;
 .prev-icon {
   height: 2.5rem;
   color: white;
-  padding-left: 0.5rem;
+  padding: 0.5rem;
+  vertical-align: middle;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 .next-icon {
   height: 2.5rem;
   color: white;
-  padding-right: 0.5rem;
+  padding: 0.5rem;
+  vertical-align: middle;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 #toast-msg {
