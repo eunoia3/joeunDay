@@ -28,11 +28,11 @@ let arr = [
     "assets/photo/M13_GHO_2602.jpg",
     "assets/photo/M14_21_GHO_2711-1.jpg",
     "assets/photo/M15_GHO_2543.jpg",
-    "assets/photo/M16_22_GHO_2895-1.jpg",
 
+    "assets/photo/M16_22_GHO_2895-1.jpg",
     "assets/photo/M17_23_GHO_3011-1.jpg",
     "assets/photo/M18_01_GHO_1983-1.jpg",
-    "assets/photo/M19_24_GHO_1202-1.jpg"
+//    "assets/photo/M19_24_GHO_1202-1.jpg"
 
 ];
 
