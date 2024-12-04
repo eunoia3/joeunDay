@@ -11141,10 +11141,12 @@ footer.footer .social-link:hover {
   /*font-family: "Noto Sans KR", sans-serif;*/
   /*font-family: "Gowun Batang", serif;*/
   font-family: "Noto Sans KR", sans-serif;
-  /*background: #F7D2DD;*/
   background: #FFD9EC;
+  /*color: #f4a2c6;*/
+  color: #FA89BA;
+  /*background: #f4a2c6;
+  color: white;*/
   padding: 0.5rem;
-  color: #f4a2c6;
 }
 .section-title-white {
   font-size: 1.2rem;
@@ -11154,7 +11156,8 @@ footer.footer .social-link:hover {
   /*background: #F7D2DD;*/
   background: white;
   padding: 0.5rem;
-  color: #f4a2c6;
+  /*color: #f4a2c6;*/
+  color: #FA89BA;
 }
 
 .section-title-white-small {
@@ -11165,7 +11168,8 @@ footer.footer .social-link:hover {
   /*background: #F7D2DD;*/
   background: white;
   padding: 0.5rem;
-  color: #f4a2c6;
+  /*color: #f4a2c6;*/
+  color: #FA89BA;
 }
 
 
@@ -11608,3 +11612,75 @@ position: relative;
    align-items: center;
    padding: 0.5rem;
  }
+
+.calendar-container {
+  /*width: 100%;
+  margin: 30px auto;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);*/
+  padding: 1.5rem;
+  background-color: #fdefde;
+  color: #f4a2c6;
+  /*font-family: "Gowun Batang", serif;*/
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.calendar-header {
+  display: inline-block;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+#currentMonth {
+border-radius: 50%;
+  border: 1px solid #f4a2c6;
+  padding: 1rem;
+  font-size: 1.2rem;
+}
+
+.calendar-days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  font-weight: bold;
+  border-bottom: 0.5px solid #f4a2c6;
+  padding-bottom: 0.5rem;
+}
+
+.day {
+  padding: 0.5rem;
+}
+
+.calendar-dates {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 0.5rem;
+  padding-top: 0.5rem;
+}
+
+.date {
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.calendar-today {
+  color: #FFFFFF;
+      border-radius : 50%;
+    background-color: #FF0000;
+}
+
+.calendar-today::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-color: #FF0000;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  content: '';
+}

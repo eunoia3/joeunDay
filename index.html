@@ -139,29 +139,50 @@
         <!-- 달력 -->
         <section class="content-section">
             <div>
-                <p class="mb-6 section-title">ʚ Wedding Day ɞ</p>
+<!--                <p class="mb-6 section-title">ʚ Wedding Day ɞ</p>-->
+                <p class="section-title" style="margin-bottom: 0;">ʚ Wedding Day ɞ</p>
             </div>
-            
-            <div class="mb-5">
-                <div>
-                    <p class="font-batang" style="text-align: center;"><i class="fa-regular fa-heart"></i></p>
+            <div style="width: 100%; height: 0.1rem; background-color: #f4a2c6;"></div>
+<!--            <div class="mb-5">-->
+            <div style="background: #FFD9EC; padding-top: 4rem;">
+                <div style="padding-bottom: 3rem;">
+                    <div>
+                        <p class="font-batang" style="text-align: center;"><i class="fa-regular fa-heart"></i></p>
+                    </div>
+                    <div style="text-align: center;">
+                        <p class="font-notosans" style="display: inline-block; margin-right: 0.3rem;"><i class="fa-regular fa-calendar"></i></p>
+                        <p id="date-wedding-p" class="font-notosans" style="display: inline-block;">웨딩 데이</p>
+                    </div>
+                    <div style="text-align: center;">
+                        <p class="font-notosans" style="display: inline-block; margin-right: 0.3rem;"><i class="fa-solid fa-location-dot"></i></p>
+                        <p id="name-date-wedding-hall-p" class="font-notosans" style="display: inline-block;">웨딩홀 이름</p>
+                    </div>
                 </div>
-                <div style="text-align: center;">
-                    <p class="font-notosans" style="display: inline-block; margin-right: 0.3rem;"><i class="fa-regular fa-calendar"></i></p>
-                    <p id="date-wedding-p" class="font-notosans" style="display: inline-block;">웨딩 데이</p>
+
+                <div style="display: none;">
+                    <img style="margin-top: 2rem; width: 100%;" src="assets/img/img_calendar.png" alt="">
                 </div>
-                <div style="text-align: center;">
-                    <p class="font-notosans" style="display: inline-block; margin-right: 0.3rem;"><i class="fa-solid fa-location-dot"></i></p>
-                    <p id="name-date-wedding-hall-p" class="font-notosans" style="display: inline-block;">웨딩홀 이름</p>
+
+                <div class="calendar-container" style="background-color: black;">
+                    <div class="calendar-header">
+                        <h2 id="currentMonth"></h2>
+                    </div>
+                    <div class="calendar-days">
+                        <div class="day">S</div>
+                        <div class="day">M</div>
+                        <div class="day">T</div>
+                        <div class="day">W</div>
+                        <div class="day">T</div>
+                        <div class="day">F</div>
+                        <div class="day">S</div>
+                    </div>
+                    <div class="calendar-dates" id="calendarDates"></div>
                 </div>
+
             </div>
-            
-            <div>
-                <img style="margin-top: 2rem; width: 100%;" src="assets/img/img_calendar.png" alt="">
-            </div>
+
+
         </section>
-
-
 
         <section class="content-section">
             <div>
@@ -645,6 +666,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Cute+Font&family=Dongle&family=Single+Day&family=Noto+Sans+KR&family=Nanum+Gothic&family=Gowun+Batang&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/def66b134a.js" crossorigin="anonymous"></script>
         <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+        <script src="js/calendar.js"></script>
         <script src="dist/sakura.js"></script>
         <script>
       var sakura = new Sakura('body', {
