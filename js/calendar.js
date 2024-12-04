@@ -11,7 +11,7 @@ function renderCalendar() {
   const firstDayOfMonth = new Date(currentYear, currentMonth, 1);
   const daysInMonth = new Date(currentYear, currentMonth + 1, 0).getDate();
   const startDayOfWeek = firstDayOfMonth.getDay();
-  currentMonthElement.textContent = `${currentYear}${currentMonth + 1}${currentDate}`;
+  currentMonthElement.textContent = '20250412';
 
   calendarDates.innerHTML = "";
 
