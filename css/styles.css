@@ -608,7 +608,8 @@ progress {
 .clip-div {
     position: absolute;
     z-index: 2;
-    color: #FA89BA;
+    /*color: #FA89BA;*/
+    color: #f4a2c6;
     transform: translate(100%, -50%);
 }
 
