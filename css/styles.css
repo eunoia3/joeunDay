@@ -565,6 +565,8 @@ progress {
 .list-inline {
   padding-left: 0;
   list-style: none;
+  display: flex;
+  justify-content: center;
 }
 
 .list-inline-item {
@@ -597,9 +599,19 @@ progress {
   content: "— ";
 }
 
+.profile-div {
+    filter: drop-shadow(0.2rem 0.2rem 0.2rem #8C8C8C);
+}
+
 .img-fluid {
   max-width: 100%;
   height: auto;
+  height: 12rem;
+  /*width: 10rem;*/
+  border-width: 0.8rem 0.8rem 0 0.8rem;
+  border-style: solid;
+  border-color: black;
+  object-fit: cover;
 }
 
 .img-thumbnail {
@@ -11176,23 +11188,19 @@ footer.footer .social-link:hover {
 .profile-text-groom {
   font-family: "Gowun Batang", serif;
   font-size: 0.9rem;
-  color: #4374D9;
+  color: #6799FF;
   line-height: 1rem;
-  margin-top: 2rem;
-  margin-bottom: 0.7rem;
   text-align: left;
-  margin-left: 2.8rem;
+  margin-left: 2rem;
 }
 
 .profile-text-bride {
   font-family: "Gowun Batang", serif;
   font-size: 0.9rem;
-  color: #CC3D3D;
+  color: #F15F5F;
   line-height: 1rem;
-  margin-top: 2rem;
-  margin-bottom: 0.7rem;
   text-align: left;
-  margin-left: 2.8rem;
+  margin-left: 2rem;
 }
 
 .profile-name {
@@ -11205,8 +11213,10 @@ footer.footer .social-link:hover {
 
       font-family: "Noto Sans KR", sans-serif;
       font-size: 1.2rem;
-      color: black;
+      color: wheat;
       line-height: 1rem;
+      text-align: left;
+      margin-left: 2rem;
 }
 
 
