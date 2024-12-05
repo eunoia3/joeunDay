@@ -567,6 +567,7 @@ progress {
   list-style: none;
   display: flex;
   justify-content: center;
+  gap: 0.5rem;
 }
 
 .list-inline-item {
@@ -600,7 +601,15 @@ progress {
 }
 
 .profile-div {
+    position: relative;
     filter: drop-shadow(0.2rem 0.2rem 0.2rem #8C8C8C);
+}
+
+.clip-div {
+    position: absolute;
+    z-index: 2;
+    color: #FA89BA;
+    transform: translate(100%, -50%);
 }
 
 .img-fluid {
@@ -11183,7 +11192,6 @@ footer.footer .social-link:hover {
   /*color: #f4a2c6;*/
   color: #FA89BA;
 }
-
 
 .profile-text-groom {
   font-family: "Gowun Batang", serif;
