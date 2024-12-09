@@ -11039,7 +11039,7 @@ footer.footer .social-link:hover {
 }
 
 .map {
-  height: 30rem;
+  /*height: 30rem;*/
 }
 .map iframe {
   pointer-events: none;
@@ -11411,6 +11411,7 @@ p span {
     height: 100%;
     background-image:url('../assets/photo/M15_GHO_2543.jpg');
     background-size: cover;
+    max-width: 50rem;
 }
 
 .thank-u-top-div {
@@ -11702,4 +11703,10 @@ border-radius: 50%;
   border-radius: 50%;
   transform: translate(-50%, -50%);
   content: '';
+}
+
+.thank-u-content-section {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 0rem;
 }
