@@ -11300,7 +11300,8 @@ footer.footer .social-link:hover {
 }
 
 .font-notosans {
-  font-family: "Noto Sans KR", sans-serif;
+  /*font-family: "Noto Sans KR", sans-serif;*/
+  font-family: "Noto Sans", Roboto, "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", sans-serif;
   font-size: 0.9rem;
   color: black;
   line-height: 1rem;
@@ -11308,7 +11309,8 @@ footer.footer .social-link:hover {
 }
 
 .font-notosans-8 {
-  font-family: "Noto Sans KR", sans-serif;
+  /*font-family: "Noto Sans KR", sans-serif;*/
+    font-family: "Noto Sans", Roboto, "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", sans-serif;
   font-size: 0.8rem;
   color: black;
   line-height: 1rem;
@@ -11316,7 +11318,8 @@ footer.footer .social-link:hover {
 }
 
 .font-notosans-9 {
-  font-family: "Noto Sans KR", sans-serif;
+  /*font-family: "Noto Sans KR", sans-serif;*/
+    font-family: "Noto Sans", Roboto, "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", sans-serif;
   font-size: 0.9rem;
   color: black;
   line-height: 1rem;
@@ -11324,7 +11327,8 @@ footer.footer .social-link:hover {
 }
 
 .font-notosans-9-1 {
-  font-family: "Noto Sans KR", sans-serif;
+  /*font-family: "Noto Sans KR", sans-serif;*/
+    font-family: "Noto Sans", Roboto, "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", sans-serif;
   font-size: 0.9rem;
   color: black;
   line-height: 2.5rem;
@@ -11332,7 +11336,8 @@ footer.footer .social-link:hover {
 }
 
 .font-notosans-7 {
-  font-family: "Noto Sans KR", sans-serif;
+  /*font-family: "Noto Sans KR", sans-serif;*/
+    font-family: "Noto Sans", Roboto, "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", sans-serif;
   font-size: 0.7rem;
   color: #5D5D5D;
   line-height: 1rem;
