@@ -11220,8 +11220,9 @@ footer.footer .social-link:hover {
   font-family: "Gowun Batang", serif;
   */
 
-      font-family: "Noto Sans KR", sans-serif;
-      font-size: 1.2rem;
+      /*font-family: "Noto Sans KR", sans-serif;*/
+      font-family: "Poor Story", system-ui;
+      font-size: 1.4rem;
       color: #FFD9EC;
       line-height: 1rem;
       text-align: left;
@@ -11303,7 +11304,7 @@ footer.footer .social-link:hover {
   font-size: 0.9rem;
   color: black;
   line-height: 1rem;
-  font-weight: bolder;
+  font-weight: bold;
 }
 
 .font-notosans-8 {
