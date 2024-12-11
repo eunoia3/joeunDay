@@ -11059,13 +11059,15 @@ footer.footer .social-link:hover {
   display: table;
   width: 100%;
   height: auto;
-  padding-top: 8rem;
-  padding-bottom: 8rem;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../assets/photo/MH_17_GHO_2118.jpg");
-  /*background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../assets/photo/M15_GHO_2543.jpg");*/
+  /*padding-top: 8rem;
+  padding-bottom: 8rem;*/
+  /*background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../assets/photo/MH_17_GHO_2118.jpg");*/
+  background: #FFD9EC;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  justify-content: center;
 }
 .masthead h1, .masthead .h1 {
   font-size: 4rem;
@@ -11079,6 +11081,13 @@ footer.footer .social-link:hover {
   .masthead h1, .masthead .h1 {
     font-size: 5.5rem;
   }
+}
+
+.masthead-img {
+    height: 100%;
+    width: 100%;
+    background-size: contain;
+    border-radius: 1rem 1rem 1rem 1rem;
 }
 
 .portfolio-item {
