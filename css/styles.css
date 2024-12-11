@@ -11538,7 +11538,7 @@ p span {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: #dedede;
+    /*background: #dedede;*/
 }
 .modal-div .modal_popup .close_btn {
     display: block;
@@ -11557,6 +11557,7 @@ p span {
 
 .modal-gallery-item-img {
     width: 100%;
+    max-width: 30rem;
 }
 
 .modal-close-div {
@@ -11578,7 +11579,7 @@ p span {
 .images{
   position: relative;
   display: flex;
-
+  justify-content: center;
 }
 .prev{
 position: relative;
