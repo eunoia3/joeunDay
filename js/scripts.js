@@ -17,17 +17,16 @@ let arr = [
     "assets/photo/M05_14_GHO_1506-1.jpg",
     "assets/photo/M06_15_GHO_1605-1.jpg",
 
-    "assets/photo/M07_10_GHO_0586-1.jpg",
-    "assets/photo/M08_11_GHO_0630-1.jpg",
+//    "assets/photo/M08_11_GHO_0630-1.jpg",
     "assets/photo/M09_18_GHO_2303-1.jpg",
-
-    "assets/photo/M10_19_GHO_2461-1.jpg",
     "assets/photo/M11_GHO_2168.jpg",
     "assets/photo/M12_17_GHO_2118-1.jpg",
 
+    "assets/photo/M07_10_GHO_0586-1.jpg",
+//    "assets/photo/M10_19_GHO_2461-1.jpg",
     "assets/photo/M13_GHO_2602.jpg",
     "assets/photo/M14_21_GHO_2711-1.jpg",
-    "assets/photo/M15_GHO_2543.jpg",
+//    "assets/photo/M15_GHO_2543.jpg",
 
     "assets/photo/M16_22_GHO_2895-1.jpg",
     "assets/photo/M17_23_GHO_3011-1.jpg",
@@ -76,6 +75,22 @@ let brideMomAccount = "123456-1234563";
 
 
 window.addEventListener('DOMContentLoaded', event => {
+
+    document.documentElement.addEventListener('touchstart', function (event) {
+         if (event.touches.length > 1) {
+              event.preventDefault();
+            }
+        }, false);
+
+    var lastTouchEnd = 0;
+
+    document.documentElement.addEventListener('touchend', function (event) {
+         var now = (new Date()).getTime();
+         if (now - lastTouchEnd <= 300) {
+              event.preventDefault();
+            } lastTouchEnd = now;
+        }, false);
+
 
     const sidebarWrapper = document.getElementById('sidebar-wrapper');
     let scrollToTopVisible = false;
