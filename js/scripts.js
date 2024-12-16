@@ -76,22 +76,6 @@ let brideMomAccount = "123456-1234563";
 
 window.addEventListener('DOMContentLoaded', event => {
 
-    document.documentElement.addEventListener('touchstart', function (event) {
-         if (event.touches.length > 1) {
-              event.preventDefault();
-            }
-        }, false);
-
-    var lastTouchEnd = 0;
-
-    document.documentElement.addEventListener('touchend', function (event) {
-         var now = (new Date()).getTime();
-         if (now - lastTouchEnd <= 300) {
-              event.preventDefault();
-            } lastTouchEnd = now;
-        }, false);
-
-
     const sidebarWrapper = document.getElementById('sidebar-wrapper');
     let scrollToTopVisible = false;
     // Closes the sidebar menu
