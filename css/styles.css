@@ -11238,7 +11238,16 @@ footer.footer .social-link:hover {
       margin-left: 2rem;
 }
 
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
 
+.tz-gallery {
+    width: 100%;
+    max-width: 40rem;
+}
 
 .gallery-row {
   /*background: #A6A6A6;*/
@@ -11421,19 +11430,43 @@ p span {
   font-weight: bold;
 }
 
+.thank-u-container {
+    width: 100%;
+    /*height: 100%;*/
+    display: flex;
+    justify-content: center;
+    background: #FFD9EC;
+}
+
 .thank-u-div {
     width: 100%;
-    height: 100%;
-    background-image:url('../assets/photo/M15_GHO_2543.jpg');
+    /*height: 100%;
+    background-image:url('../assets/photo/M15_GHO_2543.jpg');*/
     background-size: cover;
-    max-width: 50rem;
+    max-width: 40rem;
+    display: flex;
+}
+
+.thank-u-image {
+    position: relative;
+}
+
+.thank-u-image:after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: '';
+    background: rgba(0, 0, 0, 0.5);
 }
 
 .thank-u-top-div {
-    background-color: rgba(0, 0, 0, 0.5);
+    /*background-color: rgba(0, 0, 0, 0.5);*/
     width: 100%;
-    height: 100%;
-    position: relative;
+    /*height: 100%;*/
+    max-width: 40rem;
+    position: absolute;
 }
 
 .thank-u-top-text-div {
@@ -11442,13 +11475,15 @@ p span {
 }
 
 .thank-u-btn-div {
-    position: absolute;
-    bottom: 0;
+    /*position: absolute;
+    bottom: 0;*/
     width: 100%;
     text-align: center;
     margin-bottom: 3rem;
     padding-left: 5rem;
     padding-right: 5rem;
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
 }
 
 .parent-div {
@@ -11498,6 +11533,17 @@ p span {
     bottom: 1rem;
     text-align: start;
     margin-left: 1rem;
+}
+
+.map-div {
+    display: flex;
+    justify-content: center;
+}
+
+.map-image {
+    width: 100%;
+    padding: 1.5rem;
+    max-width: 40rem;
 }
 
 .parking-div {
@@ -11649,18 +11695,26 @@ position: relative;
    padding: 0.5rem;
  }
 
+.calendar-div {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+
 .calendar-container {
   /*width: 100%;
   margin: 30px auto;
   border: 1px solid #ccc;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);*/
   padding: 1.5rem;
-  background-color: #fdefde;
+  background-color: black;
   color: #f4a2c6;
   /*font-family: "Gowun Batang", serif;*/
   font-family: "Noto Sans KR", sans-serif;
   /*font-weight: bolder;*/
   text-align: center;
+  width: 100%;
+  max-width: 40rem;
 }
 
 .calendar-header {
