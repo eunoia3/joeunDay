@@ -221,9 +221,9 @@ function initGallery() {
     document.querySelector("#gallery-item-12").src = arr[12];
     document.querySelector("#gallery-item-13").src = arr[13];
     document.querySelector("#gallery-item-14").src = arr[14];
-    document.querySelector("#gallery-item-15").src = arr[15];
-    document.querySelector("#gallery-item-16").src = arr[16];
-    document.querySelector("#gallery-item-17").src = arr[17];
+//    document.querySelector("#gallery-item-15").src = arr[15];
+//    document.querySelector("#gallery-item-16").src = arr[16];
+//    document.querySelector("#gallery-item-17").src = arr[17];
 }
 
 

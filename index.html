@@ -145,7 +145,7 @@
                     <p id="groom-parent-p" class="font-notosans-9" style="display: inline-block;">아버지 • 어머니&nbsp;</p>
                     <p class="font-batang-7" style="display: inline-block;">의 아들&nbsp;</p>
                     <p id="groom-name-first-p" class="font-notosans-9" style="display: inline-block;">-</p>
-                    <button type="button" style="display: inline-block; border: 0; border-radius: 40%; margin-left:0.3rem;" onclick="phoneCall(groomPhoneNum)">
+                    <button type="button" class="icon-btn" onclick="phoneCall(groomPhoneNum)">
                         <img style="height: 1.2rem;" src="assets/icon/icon_phone.png" alt="" oncontextmenu="return false">
                     </button>
                 </div>
@@ -153,7 +153,7 @@
                     <p id="bride-parent-p" class="font-notosans-9" style="display: inline-block;">아버지 • 어머니&nbsp;</p>
                     <p class="font-batang-7" style="display: inline-block;">의 &nbsp;딸&nbsp;&nbsp;&nbsp;&nbsp;</p>
                     <p id="bride-name-first-p" class="font-notosans-9" style="display: inline-block;">-</p>
-                    <button type="button" style="display: inline-block; border: 0; border-radius: 40%; margin-left:0.3rem;" onclick="phoneCall(bridePhoneNum)">
+                    <button type="button" class="icon-btn" onclick="phoneCall(bridePhoneNum)">
                         <img style="height: 1.2rem;" src="assets/icon/icon_phone.png" alt="" oncontextmenu="return false">
                     </button>
                 </div>
@@ -278,7 +278,7 @@
                             </div>
                         </div>
 
-                        <div class="gallery-row">
+                        <!--<div class="gallery-row">
                             <div class="gallery-thumbnail" onclick="showGalleryItem(15)">
                                 <img id="gallery-item-15" class="gallery-img" src="" alt="" oncontextmenu="return false">
                             </div>
@@ -288,7 +288,7 @@
                             <div class="gallery-thumbnail" onclick="showGalleryItem(17)">
                                 <img id="gallery-item-17" class="gallery-img" src="" alt="" oncontextmenu="return false">
                             </div>
-                        </div>
+                        </div>-->
                     </div>
                 </div>
             </div>
@@ -314,7 +314,7 @@
                         <p class="font-notosans" style="display: inline-block; margin-right: 0.3rem;"><i class="fa-solid fa-seedling"></i></p>
                         <p id="address-wedding-hall-p" class="font-notosans" style="display: inline-block;">웨딩홀 주소</p>
                         <a href="nmap://search?query=더 리버사이드 호텔&amp;appname=https://eunoia3.github.io/joeunDay/">
-                        <button type="button" style="display: inline-block; border: 0; border-radius: 40%; margin-left:0.3rem;">
+                        <button type="button" class="icon-btn">
                             <img style="height: 1.2rem;" src="assets/icon/icon_location.png" alt="" oncontextmenu="return false">
                         </button>
                         </a>
@@ -322,7 +322,7 @@
                     <div style="text-align: center;">
                         <p class="font-notosans" style="display: inline-block; margin-right: 0.3rem;"><i class="fa-solid fa-seedling"></i></p>
                         <p id="phone-wedding-hall-p" class="font-notosans" style="display: inline-block;">웨딩홀 번호</p>
-                        <button type="button" style="display: inline-block; border: 0; border-radius: 40%; margin-left:0.3rem;" onclick="phoneCall(weddingHallNum)">
+                        <button type="button" class="icon-btn" onclick="phoneCall(weddingHallNum)">
                             <img style="height: 1.2rem;" src="assets/icon/icon_phone.png" alt="" oncontextmenu="return false">
                         </button>
                     </div>
@@ -357,14 +357,15 @@
                 <details  style="background: #FFECF3; padding: 0.5rem;">
                     <summary class="details-summary font-notosans">&nbsp;&nbsp;신랑 측</summary>
 
-                    <div style="margin-left: 0.5rem;">
-                        <div class="container gallery-container">
-                            <div class="tz-gallery">
+                    <div class="container" style="margin-left: 0.5rem; padding-top: 0.5rem;">
+                        <div class="send-one-div">
+                            <div>
+                                <span class="font-notosans-9-1">🤵🏻&nbsp;</span>
+                                <span id="groom-name-send" class="font-notosans-9-1">신랑성함</span>
+                            </div>
+                            <div class="send-row-div">
                                 <div class="row">
                                     <div class="send-info-row">
-                                        <div class="send-info-div">
-                                            <p id="groom-name-send" class="font-notosans-9-1">신랑성함</p>
-                                        </div>
                                         <div class="send-info-div">
                                             <p id="groom-bank-send" class="font-notosans-9-1">신랑은행</p>
                                         </div>
@@ -382,13 +383,14 @@
                             </div>
                         </div>
 
-                        <div class="container gallery-container">
-                            <div class="tz-gallery">
+                        <div class="send-one-div">
+                            <div>
+                                <span class="font-notosans-9-1">🫅🏻&nbsp;</span>
+                                <span id="groom-dad-name-send" class="font-notosans-9-1">아버지성함</span>
+                            </div>
+                            <div class="send-row-div">
                                 <div class="row">
                                     <div class="send-info-row">
-                                        <div class="send-info-div">
-                                            <p id="groom-dad-name-send" class="font-notosans-9-1">아버지성함</p>
-                                        </div>
                                         <div class="send-info-div">
                                             <p id="groom-dad-bank-send" class="font-notosans-9-1">아버지은행</p>
                                         </div>
@@ -406,13 +408,14 @@
                             </div>
                         </div>
 
-                        <div class="container gallery-container">
-                            <div class="tz-gallery">
+                        <div class="send-one-div">
+                            <div>
+                                <span class="font-notosans-9-1">👸🏻&nbsp;</span>
+                                <span id="groom-mom-name-send" class="font-notosans-9-1">어머니성함</span>
+                            </div>
+                            <div class="send-row-div">
                                 <div class="row">
                                     <div class="send-info-row">
-                                        <div class="send-info-div">
-                                            <p id="groom-mom-name-send" class="font-notosans-9-1">어머니성함</p>
-                                        </div>
                                         <div class="send-info-div">
                                             <p id="groom-mom-bank-send" class="font-notosans-9-1">어머니은행</p>
                                         </div>
@@ -430,53 +433,6 @@
                             </div>
                         </div>
                     </div>
-
-                    <!--<div class="table-div">
-                        <table style="/*border: 1px solid; width: 100%;*/">
-                            <colgroup>
-                                <col style="width: 15%;"/>
-                                <col style="width: 20%;"/>
-                                <col style="width: 40%;"/>
-                                <col style="width: 25%;"/>
-                            </colgroup>
-                            <tbody>
-                            <tr>
-                                <th id="groom-name-send" class="font-notosans-9-1">신랑성함</th>
-                                <td id="groom-bank-send" class="font-notosans-9-1">신랑은행</td>
-                                <td id="groom-account-send" class="font-notosans-9-1">신랑계좌번호</td>
-                                <td class="font-notosans-7">
-                                    <button type="button" class="copy-btn" onclick="copyClipboard(groomAccount)">
-                                        복사
-                                        <img style="height: 1.2rem;" src="assets/icon/icon_copy.png" alt="">
-                                    </button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th id="groom-dad-name-send" class="font-notosans-9-1">아버지성함</th>
-                                <td id="groom-dad-bank-send" class="font-notosans-9-1">아버지은행</td>
-                                <td id="groom-dad-account-send" class="font-notosans-9-1">아버지계좌번호</td>
-                                <td class="font-notosans-7">
-                                    <button type="button" class="copy-btn" onclick="copyClipboard(groomDadAccount)">
-                                        복사
-                                        <img style="height: 1.2rem;" src="assets/icon/icon_copy.png" alt="">
-                                    </button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th id="groom-mom-name-send" class="font-notosans-9-1">어머지성함</th>
-                                <td id="groom-mom-bank-send" class="font-notosans-9-1">어머니은행</td>
-                                <td id="groom-mom-account-send" class="font-notosans-9-1">어머니계좌번호</td>
-                                <td class="font-notosans-7">
-                                    <button type="button" class="copy-btn" onclick="copyClipboard(groomMomAccount)">
-                                        복사
-                                        <img style="height: 1.2rem;" src="assets/icon/icon_copy.png" alt="">
-                                    </button>
-                                </td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </div>-->
-
                 </details>
             </div>
             <div style="width: 100%; height: 0.1rem; background-color: #f4a2c6;"></div>
@@ -484,14 +440,15 @@
                 <details style="background: #FFECF3; padding: 0.5rem;">
                     <summary class="font-notosans" style="padding: 0.5rem;">&nbsp;&nbsp;신부 측</summary>
 
-                    <div style="margin-left: 0.5rem;">
-                        <div class="container gallery-container">
-                            <div class="tz-gallery">
+                    <div class="container" style="margin-left: 0.5rem; padding-top: 0.5rem;">
+                        <div class="send-one-div">
+                            <div>
+                                <span class="font-notosans-9-1">👰🏻‍&nbsp;</span>
+                                <span id="bride-name-send" class="font-notosans-9-1">신부성함</span>
+                            </div>
+                            <div class="send-row-div">
                                 <div class="row">
                                     <div class="send-info-row">
-                                        <div class="send-info-div">
-                                            <p id="bride-name-send" class="font-notosans-9-1">신부성함</p>
-                                        </div>
                                         <div class="send-info-div">
                                             <p id="bride-bank-send" class="font-notosans-9-1">신부은행</p>
                                         </div>
@@ -509,13 +466,14 @@
                             </div>
                         </div>
 
-                        <div class="container gallery-container">
-                            <div class="tz-gallery">
+                        <div class="send-one-div">
+                            <div>
+                                <span class="font-notosans-9-1">🫅🏻&nbsp;</span>
+                                <span id="bride-dad-name-send" class="font-notosans-9-1">아버지성함</span>
+                            </div>
+                            <div class="send-row-div">
                                 <div class="row">
                                     <div class="send-info-row">
-                                        <div class="send-info-div">
-                                            <p id="bride-dad-name-send" class="font-notosans-9-1">아버지성함</p>
-                                        </div>
                                         <div class="send-info-div">
                                             <p id="bride-dad-bank-send" class="font-notosans-9-1">아버지은행</p>
                                         </div>
@@ -533,13 +491,15 @@
                             </div>
                         </div>
 
-                        <div class="container gallery-container">
-                            <div class="tz-gallery">
+                        <div class="send-one-div">
+                            <div>
+                                <span class="font-notosans-9-1">👸🏻&nbsp;</span>
+                                <span id="bride-mom-name-send" class="font-notosans-9-1">어머니성함</span>
+                            </div>
+                            <div class="send-row-div">
                                 <div class="row">
                                     <div class="send-info-row">
-                                        <div class="send-info-div">
-                                            <p id="bride-mom-name-send" class="font-notosans-9-1">어머니성함</p>
-                                        </div>
+
                                         <div class="send-info-div">
                                             <p id="bride-mom-bank-send" class="font-notosans-9-1">어머니은행</p>
                                         </div>
@@ -557,53 +517,6 @@
                             </div>
                         </div>
                     </div>
-
-                    <!--<div class="table-div">
-                        <table style="/*border: 1px solid; width: 100%;*/">
-                            <colgroup>
-                                <col style="width: 15%;"/>
-                                <col style="width: 20%;"/>
-                                <col style="width: 40%;"/>
-                                <col style="width: 25%;"/>
-                            </colgroup>
-                            <tbody>
-                            <tr>
-                                <th id="bride-name-send" class="font-notosans-9-1">신부성함</th>
-                                <td id="bride-bank-send" class="font-notosans-9-1">신부은행</td>
-                                <td id="bride-account-send" class="font-notosans-9-1">신부계좌번호</td>
-                                <td class="font-notosans-7">
-                                    <button type="button" class="copy-btn" onclick="copyClipboard(brideAccount)">
-                                        복사
-                                        <img style="height: 1.2rem;" src="assets/icon/icon_copy.png" alt="">
-                                    </button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th id="bride-dad-name-send" class="font-notosans-9-1">아버지성함</th>
-                                <td id="bride-dad-bank-send" class="font-notosans-9-1">아버지은행</td>
-                                <td id="bride-dad-account-send" class="font-notosans-9-1">아버지계좌번호</td>
-                                <td class="font-notosans-7">
-                                    <button type="button" class="copy-btn" onclick="copyClipboard(brideDadAccount)">
-                                        복사
-                                        <img style="height: 1.2rem;" src="assets/icon/icon_copy.png" alt="">
-                                    </button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th id="bride-mom-name-send" class="font-notosans-9-1">어머니성함</th>
-                                <td id="bride-mom-bank-send" class="font-notosans-9-1">어머니은행</td>
-                                <td id="bride-mom-account-send" class="font-notosans-9-1">어머니계좌번호</td>
-                                <td class="font-notosans-7">
-                                    <button type="button" class="copy-btn" onclick="copyClipboard(brideMomAccount)">
-                                        복사
-                                        <img style="height: 1.2rem;" src="assets/icon/icon_copy.png" alt="">
-                                    </button>
-                                </td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </div>-->
-
                 </details>
             </div>
         </section>

@@ -11348,8 +11348,8 @@ footer.footer .social-link:hover {
   /*font-family: "Noto Sans KR", sans-serif;*/
     font-family: "Noto Sans", Roboto, "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", sans-serif;
   font-size: 0.9rem;
-  color: black;
-  line-height: 2.5rem;
+  color: #4C4C4C;
+  /*line-height: 2.5rem;*/
   margin-bottom: 0;
 }
 
@@ -11428,6 +11428,13 @@ footer.footer .social-link:hover {
 
 p span {
   font-weight: bold;
+}
+
+.icon-btn {
+    display: inline-block;
+    border: 0;
+    border-radius: 0.7rem 0.7rem 0.7rem 0.7rem;
+    margin-left:0.3rem;
 }
 
 .thank-u-container {
@@ -11675,6 +11682,17 @@ position: relative;
     bottom: 50px;
 }
 
+.send-one-div {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.send-row-div {
+    width: 100%;
+    max-width: 40rem;
+    padding-left: 0.5rem;
+}
+
 .send-info-row {
   /*background: #A6A6A6;*/
   align-items: center;
@@ -11693,6 +11711,11 @@ position: relative;
    display: flex;
    align-items: center;
    padding: 0.5rem;
+ }
+
+ #groom-name-send, #groom-dad-name-send, #groom-mom-name-send,
+  #bride-name-send, #bride-dad-name-send, #bride-mom-name-send {
+    font-weight: bold;
  }
 
 .calendar-div {
