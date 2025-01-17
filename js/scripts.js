@@ -152,24 +152,8 @@ window.addEventListener('DOMContentLoaded', event => {
 })
 
 function kakaoinit(key){
-    // alert("["+key+"]" + "["+"17a49ef4a29837f2847d578ed7aa8377"+"]");
-    console.log(key.length);
-    console.log('17a49ef4a29837f2847d578ed7aa8377'.length);
-    var bbkey = "17a49ef4a29837f2847d578ed7aa8377";
-    key = key.substring(0,32);
-    
-
-    for (let index = 0; index < key.length; index++) {
-        console.log("index="+index+":"+key[index]);
-    }
-
-    for (let index = 0; index < bbkey.length; index++) {
-        console.log("index="+index+":"+bbkey[index]);
-    }
-
-    Kakao.init(key);
+    Kakao.init(key.substring(0,32));
     console.log("Kakao :: "+Kakao.isInitialized());
-    console.log("["+key+"]" + "["+"17a49ef4a29837f2847d578ed7aa8377"+"]");
 }
 
 
