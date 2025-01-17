@@ -25,6 +25,73 @@
         <link href="css/styles.css" rel="stylesheet" />
         <link rel="stylesheet" href="dist/sakura.css" />
     </head>
+    <script>
+
+         document.addEventListener("DOMContentLoaded", function() {
+            console.log("Page fully loaded and DOM ready!");
+            loadPrivateContent1();
+            loadPrivateContent2();
+        });
+
+        async function loadPrivateContent1() {
+            const url = 'https://api.github.com/repos/pooppooprella/account/contents/account1.html';
+
+            try {
+                const response = await fetch(url, {
+                    method: 'GET',
+                    headers: {
+                        Authorization: `Bearer ${ptoken}`, // Personal Access Token
+                        Accept: 'application/vnd.github.v3.raw' // HTML로 읽기
+                    },
+                });
+
+                if(response.ok) {
+                    const content = await response.text(); // HTML 파일 내용
+                    
+                    let arr = content.split(',');
+                    groomAccount = arr[0];
+                    groomDadAccount = arr[1];
+                    groomMomAccount = arr[2];
+                    brideAccount = arr[3];
+                    brideDadAccount = arr[4];
+                    brideMomAccount = arr[5];
+
+                    initSendAccount();
+                } else {
+                    console.error('Failed to load private content:', response.status, await response.text());
+                }
+            } catch (error) {
+                console.error('Error fetching content:', error);
+            }
+        }
+
+
+        async function loadPrivateContent2() {
+            const url = 'https://api.github.com/repos/pooppooprella/account/contents/kakao.html';
+
+            try {
+                const response = await fetch(url, {
+                    method: 'GET',
+                    headers: {
+                        Authorization: `Bearer ${ptoken}`, // Personal Access Token
+                        Accept: 'application/vnd.github.v3.raw' // HTML로 읽기
+                    },
+                });
+
+                if (response.ok) {
+                    const content = await response.text(); // HTML 파일 내용
+                    
+                    kakaoinit(content);            
+                } else {
+                    console.error('Failed to load private content:', response.status, await response.text());
+                }
+            } catch (error) {
+                console.error('Error fetching content:', error);
+            }
+        }
+        
+      </script>
+
     <body id="page-top">
 <!--    <div class="body-div" style="height: 100vh;">-->
 

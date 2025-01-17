@@ -56,7 +56,7 @@ let groomDadBank = "농협은행";
 let groomDadAccount = "123456-1234568";
 
 let groomMomName = "정옥자";
-let groomMomBank = "기업은행";
+let groomMomBank = "농협은행";
 let groomMomAccount = "123456-1234569";
 
 let brideName = "은지연";
@@ -74,6 +74,7 @@ let brideMomName = "정정희";
 let brideMomBank = "국민은행";
 let brideMomAccount = "123456-1234563";
 
+let ptoken = "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";
 
 window.addEventListener('DOMContentLoaded', event => {
 
@@ -130,9 +131,6 @@ window.addEventListener('DOMContentLoaded', event => {
     })
 
 
-    Kakao.init('');
-    console.log("Kakao :: "+Kakao.isInitialized());
-
     // 신랑신부 init
     initGroomBride();
 
@@ -148,8 +146,13 @@ window.addEventListener('DOMContentLoaded', event => {
     // 마음 전하실 곳 init
     initSendAccount();
 
-
 })
+
+
+function kakaoinit(key){
+    Kakao.init(key.substring(0,32));
+    console.log("Kakao :: "+Kakao.isInitialized());
+}
 
 
 function fadeOut(el) {
@@ -342,8 +345,7 @@ function showToastMsg(text){
 
 /** 카카오톡 공유하기 **/
 function shareKakao() {
-
-/*    
+    
     Kakao.Share.sendDefault({
           objectType: 'feed',
           content: {
@@ -372,7 +374,7 @@ function shareKakao() {
             },
           ],
         });
-*/
+
     Kakao.Share.sendCustom({
         templateId: 114610,
           templateArgs: {
@@ -380,4 +382,5 @@ function shareKakao() {
             description: '2025.04.12 (토) 오후 12:20\n더 리버사이드 호텔 노벨라홀',
           },
         });
+
 }
