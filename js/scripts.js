@@ -56,7 +56,7 @@ let groomDadBank = "농협은행";
 let groomDadAccount = "123456-1234568";
 
 let groomMomName = "정옥자";
-let groomMomBank = "기업은행";
+let groomMomBank = "농협은행";
 let groomMomAccount = "123456-1234569";
 
 let brideName = "은지연";
@@ -74,6 +74,7 @@ let brideMomName = "정정희";
 let brideMomBank = "국민은행";
 let brideMomAccount = "123456-1234563";
 
+let ptoken = "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";
 
 window.addEventListener('DOMContentLoaded', event => {
 
@@ -129,9 +130,8 @@ window.addEventListener('DOMContentLoaded', event => {
         }
     })
 
-
-    Kakao.init('');
-    console.log("Kakao :: "+Kakao.isInitialized());
+    
+    
 
     // 신랑신부 init
     initGroomBride();
@@ -150,6 +150,27 @@ window.addEventListener('DOMContentLoaded', event => {
 
 
 })
+
+function kakaoinit(key){
+    // alert("["+key+"]" + "["+"17a49ef4a29837f2847d578ed7aa8377"+"]");
+    console.log(key.length);
+    console.log('17a49ef4a29837f2847d578ed7aa8377'.length);
+    var bbkey = "17a49ef4a29837f2847d578ed7aa8377";
+    key = key.substring(0,32);
+    
+
+    for (let index = 0; index < key.length; index++) {
+        console.log("index="+index+":"+key[index]);
+    }
+
+    for (let index = 0; index < bbkey.length; index++) {
+        console.log("index="+index+":"+bbkey[index]);
+    }
+
+    Kakao.init(key);
+    console.log("Kakao :: "+Kakao.isInitialized());
+    console.log("["+key+"]" + "["+"17a49ef4a29837f2847d578ed7aa8377"+"]");
+}
 
 
 function fadeOut(el) {
@@ -340,10 +361,11 @@ function showToastMsg(text){
 }
 
 
+
 /** 카카오톡 공유하기 **/
 function shareKakao() {
 
-/*    
+    
     Kakao.Share.sendDefault({
           objectType: 'feed',
           content: {
@@ -372,7 +394,7 @@ function shareKakao() {
             },
           ],
         });
-*/
+
     Kakao.Share.sendCustom({
         templateId: 114610,
           templateArgs: {
