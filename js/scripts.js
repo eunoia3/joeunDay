@@ -74,7 +74,7 @@ let brideMomName = "정정희";
 let brideMomBank = "국민은행";
 let brideMomAccount = "123456-1234563";
 
-let ptoken = "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";
+let ptoken = "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dd";
 
 window.addEventListener('DOMContentLoaded', event => {
 
