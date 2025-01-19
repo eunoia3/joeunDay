@@ -26,6 +26,7 @@
         <link rel="stylesheet" href="dist/sakura.css" />
     </head>
     <script>
+
          document.addEventListener("DOMContentLoaded", function() {
             console.log("Page fully loaded and DOM ready!");
             loadPrivateContent1();
@@ -44,7 +45,7 @@
                     },
                 });
 
-                if (response.ok) {
+                if(response.ok) {
                     const content = await response.text(); // HTML 파일 내용
                     
                     let arr = content.split(',');
@@ -54,7 +55,6 @@
                     brideAccount = arr[3];
                     brideDadAccount = arr[4];
                     brideMomAccount = arr[5];
-                    
 
                     initSendAccount();
                 } else {
@@ -64,6 +64,7 @@
                 console.error('Error fetching content:', error);
             }
         }
+
 
         async function loadPrivateContent2() {
             const url = 'https://api.github.com/repos/pooppooprella/account/contents/kakao.html';
@@ -88,8 +89,6 @@
                 console.error('Error fetching content:', error);
             }
         }
-        
-
         
       </script>
 
