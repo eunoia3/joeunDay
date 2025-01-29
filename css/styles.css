@@ -11821,6 +11821,7 @@ ul.tabs{
     width: 100%;
     padding: 0;
     border: 0.01rem solid #FFECF3;
+    text-align: center;
 }
 
 ul.tabs li{
@@ -11833,7 +11834,7 @@ ul.tabs li{
 }
 
 ul.tabs li.current{
-    width: 50%;
+    width: 49%;
 	background: #FFECF3;
 	color: #222;
 	border-top: 0.1rem solid #f4a2c6;
