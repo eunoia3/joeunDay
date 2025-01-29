@@ -11803,3 +11803,66 @@ border-radius: 50%;
     height: 100%;
     padding-bottom: 0rem;
 }
+
+.tab {
+    float: left;
+    width: 100%;
+    /*height: 290px; */
+    background: #FFECF3;
+}
+
+.tab-div{
+	width: 100%;
+	margin: 0 auto;
+	background: #FFECF3;
+}
+
+ul.tabs{
+    width: 100%;
+    padding: 0;
+    border: 0.01rem solid #FFECF3;
+}
+
+ul.tabs li{
+    width: 49%;
+	background: white;
+	color: #222;
+	display: inline-block;
+	cursor: pointer;
+	border-right: 0.01rem solid #FFECF3;
+}
+
+ul.tabs li.current{
+    width: 50%;
+	background: #FFECF3;
+	color: #222;
+	border-top: 0.1rem solid #f4a2c6;
+}
+
+.tab-content{
+    min-height: 25rem;
+	display: none;
+	background: #FFECF3;
+	padding: 2rem;
+}
+
+.tab-content.current{
+	display: inherit;
+}
+
+.bus-div {
+    text-align: center;
+    background: white;
+    border-radius: 0.7rem 0.7rem 0.7rem 0.7rem;
+    /*margin: 0 2rem 0 2rem;*/
+}
+
+.tab-link {
+  font-family: "Noto Sans", Roboto, "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", sans-serif;
+  font-size: 0.9rem;
+  color: black;
+  line-height: 1rem;
+  font-weight: bold;
+  padding: 1rem;
+  text-align: center;
+}

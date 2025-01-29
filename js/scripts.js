@@ -296,6 +296,27 @@ function initModalBtn() {
 }
 
 
+function initTab(tab_id) {
+
+    if(tab_id == "tab-1") {
+        document.querySelector("#tab-2").classList.remove('current');
+        document.querySelector("#tab-02").classList.remove('current');
+
+        document.querySelector("#tab-1").classList.add('current');
+        document.querySelector("#tab-01").classList.add('current');
+    }
+
+    if(tab_id == "tab-2") {
+        document.querySelector("#tab-1").classList.remove('current');
+        document.querySelector("#tab-01").classList.remove('current');
+
+        document.querySelector("#tab-2").classList.add('current');
+        document.querySelector("#tab-02").classList.add('current');
+    }
+    
+}
+
+
 /** 마음 전하실 곳 init **/
 function initSendAccount() {
     document.querySelector("#groom-name-send").innerHTML = groomName;
