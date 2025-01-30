@@ -11811,20 +11811,20 @@ border-radius: 50%;
     background: #FFECF3;
 }
 
-.tab-div{
+.tab-div {
 	width: 100%;
 	margin: 0 auto;
 	background: #FFECF3;
 }
 
-ul.tabs{
+ul.tabs {
     width: 100%;
     padding: 0;
     border: 0.01rem solid #FFECF3;
     text-align: center;
 }
 
-ul.tabs li{
+ul.tabs li {
     width: 49%;
 	background: white;
 	color: #222;
@@ -11833,21 +11833,21 @@ ul.tabs li{
 	border-right: 0.01rem solid #FFECF3;
 }
 
-ul.tabs li.current{
+ul.tabs li.current {
     width: 49%;
 	background: #FFECF3;
 	color: #222;
 	border-top: 0.1rem solid #f4a2c6;
 }
 
-.tab-content{
-    min-height: 25rem;
+.tab-content {
+    min-height: 40.5rem;
 	display: none;
 	background: #FFECF3;
 	padding: 2rem;
 }
 
-.tab-content.current{
+.tab-content.current {
 	display: inherit;
 }
 
@@ -11866,4 +11866,32 @@ ul.tabs li.current{
   font-weight: bold;
   padding: 1rem;
   text-align: center;
+}
+
+
+.bus-stop-time {
+    color: red;
+    /*text-decoration: underline;*/
+}
+
+.bus-stop {
+    font-weight: normal;
+}
+
+.bus-stop-p {
+    line-height: 1.5rem;
+}
+
+.bus-stop-div {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.icon-btn-bus-stop {
+    display: inline-block;
+    border: 0;
+    border-radius: 0.7rem 0.7rem 0.7rem 0.7rem;
+    margin-left:0.1rem;
+    background: lightgray;
+    height: 1.5rem;
 }
