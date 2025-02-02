@@ -11878,6 +11878,10 @@ ul.tabs li.current {
     font-weight: normal;
 }
 
+.bus-stop-a {
+    text-decoration-line: none;
+}
+
 .bus-stop-p {
     line-height: 1.5rem;
 }

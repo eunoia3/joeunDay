@@ -374,7 +374,7 @@ function showToastMsg(text){
 /** 카카오톡 공유하기 **/
 function shareKakao() {
 
-    
+/*
     Kakao.Share.sendDefault({
           objectType: 'feed',
           content: {
@@ -403,7 +403,7 @@ function shareKakao() {
             },
           ],
         });
-
+*/
     Kakao.Share.sendCustom({
         templateId: 114610,
           templateArgs: {
